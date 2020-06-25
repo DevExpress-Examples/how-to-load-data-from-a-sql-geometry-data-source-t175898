@@ -3,16 +3,21 @@
 
 * **[Form1.cs](./CS/SqlGeometry/Form1.cs) (VB: [Form1.vb](./VB/SqlGeometry/Form1.vb))**
 <!-- default file list end -->
-# How to load data from a SQL Geometry data source
+
+# How to load data from a SQL geometry data source
+
+This example loads data to a vector layer from an SQL geometry data source. Once you edit vector layer items, changes are saved to the data source.
 
 
-This example demonstrates how to load data to a vector layer from a SQL Geometry data source.
 
+## Description
 
-<h3>Description</h3>
+To load data from the SQL geometry data source, do the following:
 
-To load data from the SQL Geometry data source, do the following.<br />1. Create a <a href="https://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraMapSqlGeometryDataAdaptertopic">SqlGeometryDataAdapter</a>&nbsp;object.<br />2. Specify its <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapSqlGeometryDataAdapter_ConnectionStringtopic">ConnectionString</a>, <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapSqlGeometryDataAdapter_SqlTexttopic">SqlText</a>&nbsp;and <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapSqlGeometryDataAdapter_SpatialDataMembertopic">SpatialDataMember</a>&nbsp;properties.<br />3. Assign this object to the <a href="https://documentation.devexpress.com/#WindowsForms/DevExpressXtraMapVectorItemsLayer_Datatopic">VectorItemsLayer.Data</a>&nbsp;property.<br /><br />Note that all data table fields loaded from the database will be provided as attributes for each <a href="https://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraMapSqlGeometryItemtopic">SqlGeometryItem</a>&nbsp;object generated using <a href="https://documentation.devexpress.com/#WindowsForms/clsDevExpressXtraMapSqlGeometryDataAdaptertopic">SqlGeometryDataAdapter</a>.
+1. Create an [SqlGeometryDataAdapter](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.SqlGeometryDataAdapter) object.
 
-<br/>
+2. Specify its [ConnectionString](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.SqlGeometryDataAdapter.ConnectionString), [SqlText](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.SqlGeometryDataAdapter.SqlText) and [SpatialDataMember](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.SqlGeometryDataAdapter.SpatialDataMember) properties.
 
+3. Assign this object to the [VectorItemsLayer.Data](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.VectorItemsLayer.Data) property. Note that all data table fields loaded from the database are stored as attributes for each generated [SqlGeometryItem](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.SqlGeometryItem?p=netframework) object.
 
+In this example, you can use the [Map Editor](https://docs.devexpress.com/WindowsForms/120215/controls-and-libraries/map-control/end-user-features/map-editor?p=netframework) to edit shapes. To save changes, call corresponding SQL commands in the [MapEditor.MapItemEdited](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.MapEditor.MapItemEdited?p=netframework) event handler.
