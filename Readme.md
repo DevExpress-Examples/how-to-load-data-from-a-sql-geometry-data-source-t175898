@@ -9,7 +9,7 @@
 * **[Form1.cs](./CS/SqlGeometry/Form1.cs) (VB: [Form1.vb](./VB/SqlGeometry/Form1.vb))**
 <!-- default file list end -->
 
-#  How to load data from a SQL geometry data source
+# Map for WinForms - Load data from a SQL geometry data source
 
 This example loads data to a vector layer from an SQL geometry data source. Once you edit vector layer items, changes are saved to the data source.
 
