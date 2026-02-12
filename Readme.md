@@ -26,7 +26,7 @@ To load data from the SQL geometry data source, do the following:
 
 In this example, you can use the [Map Editor](https://docs.devexpress.com/WindowsForms/120215/controls-and-libraries/map-control/end-user-features/map-editor?p=netframework) to edit shapes. To save changes, call corresponding SQL commands in the [MapEditor.MapItemEdited](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.MapEditor.MapItemEdited?p=netframework) event handler.
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-map-load-data-from-a-sql-geometry-data-source&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-map-load-data-from-a-sql-geometry-data-source&~~~was_helpful=no)
 
